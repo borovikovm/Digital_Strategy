@@ -16,7 +16,7 @@ url = 'https://ria.ru/'
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 credentials = ServiceAccountCredentials.from_json_keyfile_name(os.getenv('CREDENTIALS'), scope)
 client = gspread.authorize(credentials)
-SPREADSHEET_ID = "1QhHVnwCQSjn1agZzJHqHg0YgXjU5urMyT3xms_ygCTU"
+SPREADSHEET_ID = 'SHEET_ID'
 
 
 @bot.message_handler(commands=['start'])
